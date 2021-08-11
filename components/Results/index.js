@@ -9,12 +9,11 @@ import styles from './index.module.scss';
 const Results = ({ exam }) => {
   const filterApplied = exam.filter.length > 0;
 
-  const e =
-    exam.filteredExams.length > 0
-      ? exam.filteredExams
-      : !filterApplied
-        ? exam.exams
-        : [];
+  const e = exam.filteredExams.length > 0
+    ? exam.filteredExams
+    : !filterApplied
+      ? exam.exams
+      : [];
 
   return (
     <div className={styles.container}>

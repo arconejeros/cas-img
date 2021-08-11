@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 
-import { useParams } from 'react-router-dom';
+
 import { format, validate } from 'rut.js';
+import { useRouter } from 'next/router'
 
 import { withExam } from '../../context/examContext';
 import Button from '../Button';
@@ -10,10 +11,11 @@ import InputFile from '../InputFile';
 import styles from './index.module.scss';
 
 const Form = ({ exam }) => {
-  const { examen } = useParams();
+  const router = useRouter()
+  const examen = router.query;
 
   useEffect(() => {
-    exam.setSelected(exam.exams.find((e) => e.title === examen));
+    exam.setSelected(exam.exams.find((e) => e.title === examen.title[0]));
   }, []);
   return (
     <div className={styles.container}>

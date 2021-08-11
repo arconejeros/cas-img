@@ -1,7 +1,7 @@
 import React from 'react';
 
 import parse from 'html-react-parser';
-import Link from 'next/link'
+import Link from 'next/link';
 
 import { withExam } from '../../../context/examContext';
 import styles from './index.module.scss';
@@ -18,14 +18,16 @@ const Option = ({ option, exam }) => {
   return (
     <div className={`${styles.container}`}>
       <Link href={`/details/${option.title}`}>
-        <h3>{parse(highlightWord(option.title))}</h3>
-        <div className="row">
-          {option.keywords.map((keyword, index) => (
-            <span key={index.toString()} style={{ marginRight: '5px' }}>
-              {parse(highlightWord(keyword))}
-              {option.keywords.length !== index + 1 && ', '}
-            </span>
-          ))}
+        <div>
+          <h3>{parse(highlightWord(option.title))}</h3>
+          <div className="row">
+            {option.keywords.map((keyword, index) => (
+              <span key={index.toString()} style={{ marginRight: '5px' }}>
+                {parse(highlightWord(keyword))}
+                {option.keywords.length !== index + 1 && ', '}
+              </span>
+            ))}
+          </div>
         </div>
       </Link>
     </div>

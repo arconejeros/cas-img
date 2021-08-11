@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 
 import _ from 'lodash';
 import { isMobile } from 'react-device-detect';
@@ -56,20 +56,18 @@ const Filter = ({ exam }) => {
           type="button"
           onClick={() => setOpen(!open)}
         >
-          <Image
-            width={"100%"}
-            height={"100%"}
+          <img
             src="/assets/chevronDown.png"
             className={styles.searchIcon}
             alt="Abrir Menu"
           />
         </button>
         {open && (
-          <div className={styles.optionsContainer}>
-            {examList.map((e, i) => (
-              <Option option={e} key={i.toString()} />
-            ))}
-          </div>
+        <div className={styles.optionsContainer}>
+          {examList.map((e, i) => (
+            <Option option={e} key={i.toString()} />
+          ))}
+        </div>
         )}
       </div>
     </div>

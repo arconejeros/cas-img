@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Link from 'next/link'
+import Link from 'next/link';
 
 import {withExam} from '../../context/examContext';
 import Button from '../Button';

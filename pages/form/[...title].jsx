@@ -1,10 +1,10 @@
 import React from 'react';
-import Details from '@/components/Details';
+import Form from '@/components/Form';
 
-const DetailsContainer = () => (
+const FormContainer = () => (
   <div>
-    <Details />
+    <Form />
   </div>
 );
 
-export default DetailsContainer;
+export default FormContainer;

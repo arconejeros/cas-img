@@ -2,28 +2,30 @@
 import React, { useEffect, useState } from 'react';
 
 import gsap, { Back } from 'gsap';
-import { useParams, useHistory, Link } from 'react-router-dom';
+import Link from 'next/link'
 
 import { withExam } from '../../context/examContext';
 import Alert from '../Alert';
 import Button from '../Button';
 import Location from '../Location';
 import styles from './index.module.scss';
+import { useRouter } from 'next/router'
 
-const Details = ({ exam }) => {
+const Details = ({ exam, procedures }) => {
+  exam.setExams(procedures);
   let infoRef;
-  const { examen } = useParams();
-  let history = useHistory();
-  const { title, action, whatItIs, location, howToPrepare, alert } =
-    exam.selected;
+  const router = useRouter()
+  const examen = router.query;
+  const { title, action, whatItIs, location, howToPrepare, alert } = exam.selected;
   const [activeTab, setActiveTab] = useState(0);
   const goBack = () => {
-    history.replace('/');
-    exam.setInitialState();
+    window.location.href="/"
+    // router.back();
+    // exam.setInitialState();
   };
 
   useEffect(() => {
-    exam.setSelected(exam.exams.find((e) => e.title === examen));
+    exam.setSelected(exam.exams.find((e) => e.title === examen.title[0]));
     gsap.from(infoRef, 0.3, {
       autoAlpha: 0,
       ease: Back.easeInOut,
