@@ -1,10 +1,9 @@
 import React, { useState, useRef } from 'react';
-import Image from 'next/image';
 
 import _ from 'lodash';
 import { isMobile } from 'react-device-detect';
 
-import { withExam } from '../../context/examContext';
+import { withExam } from '../../context/exam-context';
 import { useOutsideAlerter } from '../../utils/clickOutside';
 import styles from './index.module.scss';
 import Option from './Option';
@@ -30,7 +29,6 @@ const Filter = ({ exam }) => {
   };
   const filterApplied = exam.filter.length > 0;
   const examList =
-    // eslint-disable-next-line no-nested-ternary
     exam.filteredExams.length > 0
       ? exam.filteredExams
       : !filterApplied

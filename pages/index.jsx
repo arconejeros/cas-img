@@ -1,7 +1,7 @@
 import React from 'react';
 import Filter from '@/components/Filter';
 import Results from '@/components/Results';
-import { withExam } from '../context/examContext';
+import { withExam } from '../context/exam-context';
 
 const IndexPage = ({ procedures, exam }) => {
   exam.setExams(procedures);
@@ -12,6 +12,5 @@ const IndexPage = ({ procedures, exam }) => {
     </>
   );
 };
-
 
 export default withExam(IndexPage);

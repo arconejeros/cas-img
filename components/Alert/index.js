@@ -27,10 +27,9 @@ const Alert = ({ text }) => {
         }}
       >
         <img className={styles.icon} src={alertIcon} alt="Atención" />
-        <div
-          className={styles.text}
-          dangerouslySetInnerHTML={{ __html: text }}
-        />
+
+        {/* eslint-disable-next-line react/no-danger */}
+        <div className={styles.text} dangerouslySetInnerHTML={{ __html: text }} />
         <button
           type="button"
           className={styles.closeButton}

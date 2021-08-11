@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import './App.css';
+import '../scss/App.css';
 import '../scss/application.scss';
-import ExamContext from '../context/examContext';
+import ExamContext from '../context/exam-context';
 
-function MyApp({ Component, pageProps, procedures }) {
+function CasImagenolia({ Component, pageProps, procedures }) {
   return (
     <div>
       <Head>
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps, procedures }) {
   );
 }
 
-MyApp.getInitialProps = async () => {
+CasImagenolia.getInitialProps = async () => {
   const res = await fetch('http://localhost:3000/api/procedures', {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
@@ -32,4 +32,4 @@ MyApp.getInitialProps = async () => {
   return { procedures: json };
 };
 
-export default MyApp;
+export default CasImagenolia;

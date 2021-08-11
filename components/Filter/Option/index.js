@@ -3,7 +3,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 import Link from 'next/link';
 
-import { withExam } from '../../../context/examContext';
+import { withExam } from '../../../context/exam-context';
 import styles from './index.module.scss';
 
 const Option = ({ option, exam }) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import folder from '../../public/assets/folder.png';
-import { withExam } from '../../context/examContext';
+import { withExam } from '../../context/exam-context';
 import Button from '../Button';
 import Card from '../Card';
 import styles from './index.module.scss';

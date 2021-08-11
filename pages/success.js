@@ -1,8 +1,8 @@
 import React from 'react';
 import Success from '@/components/Success';
 
-const SucessContainer = () => (
+const SuccessContainer = () => (
   <Success />
 );
 
-export default SucessContainer;
+export default SuccessContainer;

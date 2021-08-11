@@ -2,14 +2,13 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import {withExam} from '../../context/examContext';
+import { withExam } from '../../context/exam-context';
 import Button from '../Button';
 import styles from './index.module.scss';
 
-const Card=({examen, exam}) => {
-  const actionButton=() => {
+const Card = ({ examen }) => {
+  const actionButton = () => {
     if (examen.action.type === 'call') {
-      // eslint-disable-next-line jsx-a11y/anchor-is-valid
       return (
         <Button
           className="m-bottom-1"

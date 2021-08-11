@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import styles from './index.module.scss';
 
 import closeIcon from '../../public/assets/closeIcon.png';
-import { withExam } from '../../context/examContext';
+import { withExam } from '../../context/exam-context';
 
 const InputFile = ({
   disabled,

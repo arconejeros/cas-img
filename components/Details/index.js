@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import gsap, { Back } from 'gsap';
 import Link from 'next/link'
 
-import { withExam } from '../../context/examContext';
+import { withExam } from '../../context/exam-context';
 import Alert from '../Alert';
 import Button from '../Button';
 import Location from '../Location';

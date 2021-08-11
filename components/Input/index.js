@@ -2,8 +2,7 @@
 import React, { useState } from 'react';
 
 import styles from './index.module.scss';
-import { useForm } from '../../context/form-context';
-import { withExam } from '../../context/examContext';
+import { withExam } from '../../context/exam-context';
 
 const Input = ({
   disabled,

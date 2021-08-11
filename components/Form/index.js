@@ -1,17 +1,16 @@
 import React, { useEffect } from 'react';
 
-
 import { format, validate } from 'rut.js';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
-import { withExam } from '../../context/examContext';
+import { withExam } from '../../context/exam-context';
 import Button from '../Button';
 import Input from '../Input';
 import InputFile from '../InputFile';
 import styles from './index.module.scss';
 
 const Form = ({ exam }) => {
-  const router = useRouter()
+  const router = useRouter();
   const examen = router.query;
 
   useEffect(() => {
