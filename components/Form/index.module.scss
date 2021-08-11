@@ -1,0 +1,71 @@
+.container {
+  background: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+  height: calc(100vh - 175px);
+
+  .title {
+    font-family: Rubik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.0121em;
+    text-align: center;
+  }
+
+  .examName {
+    font-family: Rubik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.0121em;
+    text-align: center;
+  }
+}
+
+.form {
+  width: 373px;
+  position: relative;
+}
+
+
+.btn {
+  width: 203px;
+  height: 48px;
+  right: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 576px) {
+  .form {
+    width: 100%;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  .container {
+    .title {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0.0121em;
+      text-align: left;
+    }
+
+    .examName {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.0121em;
+      text-align: left;
+    }
+  }
+}

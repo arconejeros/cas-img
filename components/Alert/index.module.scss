@@ -1,0 +1,57 @@
+.container {
+  height: 41px;
+  max-width: 665px;
+  width: 100%;
+  border-radius: 8px;
+  background: #FFECB3;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+
+  .text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.0121em;
+    text-align: left;
+    color: #8A6A4D;
+    margin-left: 12px;
+
+    b {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.0121em;
+      text-align: left;
+      color: #8A6A4D;
+    }
+
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .closeButton {
+    margin-left: auto;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    .closeIcon {
+      width: 12px;
+      height: 12px;
+
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin-bottom: 20px;
+  }
+}

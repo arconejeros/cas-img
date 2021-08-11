@@ -1,0 +1,94 @@
+.container {
+  // width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  max-height: 207px;
+  min-height: 207px;
+  height: 100%;
+  min-width: 590px;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 #C9CFE3BF;
+  width: 30%;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContainer {
+  padding: 20px;
+  min-width: 345px;
+  flex: 2;
+}
+
+.actionContainer {
+  padding: 20px;
+  flex: 1;
+}
+
+.title {
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.0121em;
+  text-align: left;
+}
+
+.description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.0121em;
+  text-align: left;
+}
+
+.btn {
+  background: #01A49A;
+  box-shadow: 0 2px 2px rgba(1, 164, 154, 0.25);
+  border-radius: 8px;
+  height: 40px;
+  width: 163px;
+  //styleName: Body_2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.0121em;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.outlined {
+  background: white;
+  color: #01A49A;
+  border: 1px solid #01A49A;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    filter: drop-shadow(0px 2px 10px #C9CFE3);
+    min-width: initial;
+    width: 100%;
+    max-height: initial;
+    min-height: initial;
+    height: 100%;
+    margin: 23px 0;
+  }
+
+  .infoContainer {
+    padding: 23px 23px 0 23px;
+  }
+
+  .actionContainer {
+    width: 100%;
+    .btn {
+      width: 100%;
+    }
+  }
+}

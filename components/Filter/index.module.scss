@@ -1,0 +1,110 @@
+@import '../../scss/variables/colors';
+
+.container {
+  width: 100%;
+  height: 248px;
+  background: rgba(196, 196, 196, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.0121em;
+  text-align: center;
+  height: 32px;
+  margin-bottom: 17px;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 523px;
+  height: 56px;
+  left: 530px;
+  top: 212px;
+  background: #FFFFFF;
+  border: 2px solid #D2D6D9;
+  color: #79858E;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.0121em;
+  text-align: left;
+  padding-left: 20px;
+  outline-color: $Secondary_1;
+}
+
+.searchButton {
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchIcon {
+  height: 100%;
+  width: 100%;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  overflow: auto;
+  position: absolute;
+  width: 518px;
+  max-height: 339px;
+  top: 80px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 10px #C9CFE3;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 41px;
+    height: 322px;
+    background: #C4C4C433;
+  }
+  .title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.0121em;
+    text-align: left;
+  }
+
+  .inputContainer {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .input {
+    width: 100%;
+  }
+  .optionsContainer {
+    width: 100%;
+
+  }
+}
+

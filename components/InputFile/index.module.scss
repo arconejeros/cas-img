@@ -1,0 +1,172 @@
+@import 'src/scss/variables/colors';
+
+.inputContainer:first-of-type {
+  margin-top: 57px;
+}
+
+.inputContainer:last-of-type {
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  height: 56px;
+  // width: 437px;
+  max-width: 373px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 21px;
+  border: 1px solid $gray;
+  box-sizing: border-box;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: border-color .2s ease-in-out;
+
+  &:hover {
+    border: 1px solid $Tertiary_2;
+
+    label {
+      color: $Tertiary_2;
+    }
+  }
+
+  label {
+    color: $Tertiary_5;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    position: absolute;
+    transition: top .1s ease-in-out, font-size .1s ease-in-out, color .1s ease-in-out;
+    top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0121em;
+    text-align: left;
+
+  }
+
+  .input {
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0121em;
+    text-align: left;
+    -webkit-appearance: none;
+    outline: none;
+    padding-top: 18px;
+
+    color: $Secondary_1;
+    text-shadow: 0px 0px 0px $Tertiary_2;
+    -webkit-text-fill-color: transparent;
+
+
+    &::placeholder {
+      font-family: 'Rubik', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.0121em;
+      text-align: left;
+      color: $Tertiary_2;
+
+    }
+  }
+}
+
+.focused {
+  border: 1px solid $Secondary_1;
+
+  &:hover {
+    border: 1px solid $Secondary_1;
+
+    label {
+      color: $Secondary_1;
+    }
+  }
+
+  label {
+    color: $Secondary_1;
+    top: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.0120588em;
+    text-align: left;
+  }
+}
+
+.filled {
+  label {
+    color: $Secondary_1;
+    top: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.0120588em;
+    text-align: left;
+  }
+}
+
+.error {
+  border: 1px solid $Error_1;
+
+  &:hover {
+    border: 1px solid $Error_1;
+
+    label {
+      color: $Error_1;
+    }
+  }
+
+  label {
+    color: $Error_1;
+  }
+
+  .helperText {
+    margin-top: 50px;
+    margin-left: -10px;
+  }
+}
+
+
+.disabled {
+  background-color: $Tertiary_10;
+  border: none;
+
+  &:hover {
+    border: none;
+
+    label {
+      color: $Tertiary_5;
+      font-weight: normal;
+    }
+  }
+
+  label {
+    color: $Tertiary_5;
+    font-weight: normal;
+  }
+
+}
+
+.closeButton {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.closeIcon {
+  width: 16px !important;
+  height: 16px !important;
+}

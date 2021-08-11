@@ -1,0 +1,126 @@
+.container {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 0 120px;
+  width: 100%;
+  max-width: 1440px;
+
+}
+
+.title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.0121em;
+  text-align: left;
+  color: #203442;
+  margin-top: 37px;
+}
+
+.subTitle {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.0121em;
+  text-align: left;
+  color: #203442;
+  margin-bottom: 24px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 224px;
+}
+
+.noResultsContainer {
+  display: flex;
+  flex-direction: row;
+  height: 320px;
+  justify-content: center;
+  align-items: center;
+  div {
+    flex: 1;
+    h3 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: 0.0121em;
+      text-align: left;
+    }
+    p {
+      max-width: 569px;
+      width: 100%;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.0121em;
+      text-align: left;
+    }
+    img {
+      width: 247px;
+      height: 197px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+  .title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.0121em;
+    text-align: left;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0121em;
+    text-align: left;
+  }
+
+  .cardContainer {
+    margin-bottom: 60px;
+  }
+
+  .noResultsContainer {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 20px;
+    div {
+      padding: 20px;
+
+      h3 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.0121em;
+        text-align: left;
+      }
+
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.0121em;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.btn {
+  background: #01A49A;
+  box-shadow: 0 2px 2px rgba(1, 164, 154, 0.25);
+  border-radius: 8px;
+  height: 40px;
+  width: 163px;
+  //styleName: Body_2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.0121em;
+  text-align: center;
+  color: white;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.outlined {
+  background: white;
+  color: #01A49A;
+  border: 1px solid #01A49A;
+}

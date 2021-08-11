@@ -1,0 +1,62 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(36, 48, 55, .7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 26px;
+  max-width: 590px;
+  width: 100%;
+  height: 326px;
+  background: white;
+  border-radius: 16px;
+
+  .h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.0121em;
+    text-align: center;
+    color: #364855;
+    max-width: 111px;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0121em;
+    color: #364855;
+    margin-top: 15px !important;
+    max-width: 246px;
+  }
+
+  .btn {
+    margin-top: 30px;
+    width: 136px;
+    height: 36.84px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.0121em;
+    text-align: center;
+
+  }
+}
